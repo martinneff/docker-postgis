@@ -53,6 +53,6 @@ RUN cp -r /etc/ssl /tmp/ssl-copy/ && \
 	mkdir -p /var/run/postgresql/9.5-main.pg_stat_tmp && \
 	chmod 0777 /var/run/postgresql/9.5-main.pg_stat_tmp
 
-RUN chown -R postgres /var/lib/postgresql/9.5/main
+RUN chown -R postgres /var/lib/postgresql
 USER postgres
 CMD /start-postgis.sh
